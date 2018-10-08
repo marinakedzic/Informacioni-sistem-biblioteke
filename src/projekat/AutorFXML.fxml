@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #F2C663;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekat.AutorFXMLController">
+   <children>
+      <TextField fx:id="ime" layoutX="125.0" layoutY="44.0" />
+      <Label layoutX="38.0" layoutY="48.0" text="Ime autora" />
+      <TextField fx:id="sime" layoutX="125.0" layoutY="81.0" />
+      <Label layoutX="35.0" layoutY="85.0" text="Srednje ime" />
+      <TextField fx:id="prezime" layoutX="125.0" layoutY="117.0" />
+      <Label layoutX="26.0" layoutY="121.0" text="Prezime autora" />
+      <TextArea fx:id="napomena" layoutX="294.0" layoutY="49.0" prefHeight="96.0" prefWidth="200.0" />
+      <Label layoutX="294.0" layoutY="23.0" text="Napomena" />
+      <Button layoutX="502.0" layoutY="117.0" mnemonicParsing="false" onAction="#DodajAutora" text="Dodaj" />
+      <Label layoutX="26.0" layoutY="186.0" text="ID autora" />
+      <Button layoutX="152.0" layoutY="221.0" mnemonicParsing="false" onAction="#ObrisiAutora" text="Obrisi" />
+      <Button layoutX="88.0" layoutY="221.0" mnemonicParsing="false" onAction="#IzmeniAutora" text="Izmeni" />
+      <TextField fx:id="id" layoutX="101.0" layoutY="182.0" prefHeight="25.0" prefWidth="99.0" />
+      <Button layoutX="29.0" layoutY="221.0" mnemonicParsing="false" onAction="#NadjiAutora" text="Nadji" />
+   </children>
+</AnchorPane>

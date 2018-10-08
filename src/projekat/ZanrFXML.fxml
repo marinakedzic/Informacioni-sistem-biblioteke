@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #F2C663;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekat.ZanrFXMLController">
+   <children>
+      <TextField fx:id="naziv" layoutX="32.0" layoutY="76.0" />
+      <Label layoutX="32.0" layoutY="44.0" text="Naziv zanra" />
+      <Button layoutX="200.0" layoutY="76.0" mnemonicParsing="false" onAction="#DodajZanr" text="Dodaj" />
+      <Label layoutX="28.0" layoutY="188.0" text="ID zanra" />
+      <TextField fx:id="id" layoutX="107.0" layoutY="184.0" prefHeight="25.0" prefWidth="78.0" />
+      <Button layoutX="81.0" layoutY="226.0" mnemonicParsing="false" onAction="#IzmeniZanr" text="Izmeni" />
+      <Button layoutX="140.0" layoutY="226.0" mnemonicParsing="false" onAction="#ObrisiZanr" text="Obrisi" />
+      <Button layoutX="28.0" layoutY="226.0" mnemonicParsing="false" onAction="#NadjiZanr" text="Nadji" />
+   </children>
+</AnchorPane>

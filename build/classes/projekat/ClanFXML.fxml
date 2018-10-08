@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #F2C663;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekat.ClanFXMLController">
+   <children>
+      <Button layoutX="28.0" layoutY="153.0" mnemonicParsing="false" onAction="#NadjiClana" text="Nadji clana" />
+      <Button layoutX="146.0" layoutY="153.0" mnemonicParsing="false" onAction="#DodajClana" text="Dodaj clana" />
+      <Button layoutX="253.0" layoutY="153.0" mnemonicParsing="false" onAction="#IzmeniClana" text="Izmeni clana" />
+      <Button layoutX="376.0" layoutY="153.0" mnemonicParsing="false" onAction="#ObrisiClana" text="Obrisi clana" />
+      <Button layoutX="271.0" layoutY="461.0" mnemonicParsing="false" onAction="#ZaduziKnjigu" text="Zaduzi knjigu" />
+      <Button layoutX="382.0" layoutY="461.0" mnemonicParsing="false" onAction="#RazduziKnjigu" text="Razduzi knjigu" />
+      <ListView fx:id="zknjige" layoutX="28.0" layoutY="218.0" onMouseClicked="#VracaISBN" prefHeight="221.0" prefWidth="257.0" />
+      <TextField fx:id="ime" layoutX="28.0" layoutY="110.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="prezime" layoutX="252.0" layoutY="50.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="cbroj" layoutX="28.0" layoutY="50.0" prefHeight="25.0" prefWidth="197.0" />
+      <Text layoutX="28.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ime" />
+      <Text layoutX="252.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prezime" />
+      <Text layoutX="28.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clanski broj" />
+      <TextField fx:id="email" layoutX="252.0" layoutY="110.0" prefHeight="25.0" prefWidth="197.0" />
+      <Text layoutX="252.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <TextField fx:id="ISBN" layoutX="103.0" layoutY="461.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="35.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN knjige" />
+      <Text layoutX="35.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zaduzene knjige" />
+      <ListView fx:id="zvreme" layoutX="286.0" layoutY="218.0" prefHeight="221.0" prefWidth="257.0" />
+      <Text layoutX="289.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vreme zaduzenja" />
+      <Button layoutX="475.0" layoutY="48.0" mnemonicParsing="false" onAction="#Ocisti" prefHeight="85.0" prefWidth="99.0" text="Ocisti polja" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #F2C663;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekat.ZamenaLozinkeFXMLController">
+   <children>
+      <PasswordField fx:id="stara" layoutX="270.0" layoutY="71.0" />
+      <PasswordField fx:id="nova" layoutX="270.0" layoutY="130.0" />
+      <PasswordField fx:id="potvrda" layoutX="270.0" layoutY="198.0" />
+      <Text layoutX="270.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trenutna Lozinka" />
+      <Text layoutX="270.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nova Lozinka" />
+      <Text layoutX="270.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potvrdi Lozinku" />
+      <ImageView fitHeight="190.0" fitWidth="185.0" layoutX="31.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@change.png" />
+         </image></ImageView>
+      <Button layoutX="358.0" layoutY="236.0" mnemonicParsing="false" onAction="#Zamena" text="Promeni" />
+   </children>
+</AnchorPane>

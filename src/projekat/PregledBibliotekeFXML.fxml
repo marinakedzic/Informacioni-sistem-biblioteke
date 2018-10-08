@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #F2C663;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekat.PregledBibliotekeFXMLController">
+   <children>
+      <TableView fx:id="biblioteka" layoutX="19.0" layoutY="198.0" prefHeight="266.0" prefWidth="563.0">
+        <columns>
+            <TableColumn fx:id="ISBN" prefWidth="67.0" text="ISBN" />
+          <TableColumn fx:id="knjiga" prefWidth="118.0" text="Naziv knjige" />
+          <TableColumn fx:id="autor" prefWidth="134.0" text="Ime autora" />
+            <TableColumn fx:id="zanr" minWidth="9.0" prefWidth="88.0" text="Zanr" />
+            <TableColumn fx:id="stanje" prefWidth="71.0" text="Stanje" />
+            <TableColumn fx:id="izdavac" minWidth="6.0" prefWidth="83.0" text="Izdavac" />
+        </columns>
+      </TableView>
+      <Button layoutX="359.0" layoutY="70.0" mnemonicParsing="false" onAction="#PretragaBiblioteke" text="Pretraga" />
+      <TextField fx:id="nISBN" layoutX="19.0" layoutY="70.0" />
+      <Label layoutX="25.0" layoutY="37.0" text="ISBN">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="39.0" text="Ime autora">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="110.0" text="Zanr">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="110.0" text="Izadavac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="498.0" layoutY="61.0" mnemonicParsing="false" onAction="#DodajKnjigu" prefHeight="113.0" prefWidth="84.0" text="Dodaj knjigu" />
+      <ComboBox fx:id="nAutor" layoutX="175.0" layoutY="70.0" prefWidth="150.0" />
+      <ComboBox fx:id="nIzdavac" layoutX="175.0" layoutY="141.0" prefWidth="150.0" />
+      <ComboBox fx:id="nZanr" layoutX="19.0" layoutY="141.0" prefWidth="150.0" />
+      <Button layoutX="359.0" layoutY="141.0" mnemonicParsing="false" onAction="#Ocisti" prefHeight="25.0" prefWidth="61.0" text="Osvezi" />
+   </children>
+</AnchorPane>
